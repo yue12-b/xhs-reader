@@ -16,7 +16,7 @@ import requests
 from mcp.server.fastmcp import FastMCP
 
 _port = int(os.environ.get("PORT", 8000))
-mcp = FastMCP("Xiaohongshu_Reader_HTTP", host="0.0.0.0", port=_port)
+mcp = FastMCP("Xiaohongshu_Reader_HTTP", host="0.0.0.0", port=_port, json_response=True, stateless_http=True)
 
 HUNYUAN_BASE_URL = "https://api.hunyuan.cloud.tencent.com/v1"
 
